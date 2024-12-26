@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #151515;
+  background-color: #333333;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --white-color: #fefaef;
+  --yellow-color: #ffcb66;
+  --red-color: #f7a374;
+  --green-color: #add6b8;
+  --purple-color: #ccb6dc;
+  --pink-color: #f2a297;
+  --border-radius: 26px;
+}
+
+#__nuxt {
+  display: flex;
+  justify-content: center;
+  height: 100dvh;
+  text-align: center;
+}
+
+// animations
+.list-animation-move,
+.list-animation-enter-active,
+.list-animation-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-animation-enter-from,
+.list-animation-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
